@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Twitter | Dashboard</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/app.css"/>
+
+  <!-- Script & JQuery -->
+  <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
+
+</head>
+
+
+<body>
+
+  <!-- COLUMN LEFT -------------------------------------------------------------------------------->
+  <aside>
+
+    <!-- Barra de navegación mini ------------------------------------------------------------------->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#"><i class="fas fa-bars"></i></a></li>
+        <li><a href="#"><i class="fas fa-home"></i></a></li>
+        <li><a href="#"><i class="fas fa-cog"></i></a></li>
+        <li><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
+      </ul>
+    </nav>
+
+    <!-- Caja de búsqueda ---------------------------------------------------------------------------->
+    <form class="form search">
+      <input class="search__box" type="search" name="search" value="" placeholder="Buscar"/>
+    </form>
+    
+    <!-- Crear tuit --------------------------------------------------------------------------------->
+    <form class="form createTuit">
+      <!-- Imagen de perfil -->
+      <div class="createTuit__imageBox"><img class="createTuit__image" src="../src/images/uk.png" alt="profile"/></div>
+
+      <!-- Seleccionar imagen de perfil -->
+      <label for="select">
+        <select class="createTuit__imageSelect" name="select" id="select">
+          <option value="uk.png">Seleccionar imagen</option>
+          <option value="she.jpg">Margot Robbie</option>
+          <option value="he.jpg">Ryan Reynolds</option>
+          <option value="mr.jpg">Barack Obama</option>
+          <option value="fl.jpg">Florcita Motuda</option>
+        </select>
+      </label>
+
+      <!-- Texto del tuit -->
+      <textarea class="form--createTuit__textarea" name="tuitText" form="createTuit" rows="10" required></textarea>
+
+      <!-- Botón de enviar -->
+      <input class="form--createTuit__button" type="submit" name="submit" value="Enviar">
+    </form>
+
+  </aside>
+
+  <!-- BOARDTUITS --------------------------------------------------------------------------------->
+  <section class="boardTuits">
+
+  </section>
+</body>
+
+
+</html>
