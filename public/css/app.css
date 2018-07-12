@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Catamaran);html {
+  font: 16px /1.5 'Catamaran', 'sans-serif';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.columnLeft {
+  margin: 50px 15px;
+}
+
+.columnLeft .navbar {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 5px 40px;
+  background-color: #0D9EFF;
+}
+
+.columnLeft .navbar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.columnLeft .navbar__item {
+  font-size: 1.4rem;
+  color: #EBE8EA;
+  padding: 0 10px;
+}
+
+.columnLeft .search__box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.2rem;
+  color: #0A78C2;
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 15px;
+  border: 1px solid #0D9EFF;
+}
+
+.columnLeft .search__box::-webkit-input-placeholder {
+  color: #EBE8EA;
+}
+
+.columnLeft .search__box:-ms-input-placeholder {
+  color: #EBE8EA;
+}
+
+.columnLeft .search__box::-ms-input-placeholder {
+  color: #EBE8EA;
+}
+
+.columnLeft .search__box::placeholder {
+  color: #EBE8EA;
+}
+
+.columnLeft .createTuit {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: inherit;
+  border-radius: 8px;
+  background-color: #0D9EFF;
+  text-align: center;
+}
+
+.columnLeft .createTuit__imageContainer {
+  text-align: center;
+}
+
+.columnLeft .createTuit__image {
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.columnLeft .createTuit__imageSelect {
+  max-width: 160px;
+  margin-bottom: 10px;
+  border: 1px solid #EBE8EA;
+  border-radius: 3px;
+  background-color: #EBE8EA;
+  font-size: 0.8rem;
+}
+
+.columnLeft .createTuit__textarea {
+  resize: vertical;
+  width: 100%;
+  border: none;
+  border-left: 1px solid #0D9EFF;
+  border-right: 1px solid #0D9EFF;
+  font-size: 1rem;
+  color: #0A78C2;
+}
+
+.columnLeft .createTuit__textarea::-webkit-input-placeholder {
+  color: #EBE8EA;
+}
+
+.columnLeft .createTuit__textarea:-ms-input-placeholder {
+  color: #EBE8EA;
+}
+
+.columnLeft .createTuit__textarea::-ms-input-placeholder {
+  color: #EBE8EA;
+}
+
+.columnLeft .createTuit__textarea::placeholder {
+  color: #EBE8EA;
+}
+
+.columnLeft .createTuit__button {
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 3px solid #EBE8EA;
+  border-radius: 51px;
+  padding: 10px 0;
+  background-color: #0D9EFF;
+  color: #EBE8EA;
+}
+
+.columnLeft .createTuit__button:hover {
+  border-color: #0A78C2;
+  background-color: #0A78C2;
+  color: #EBE8EA;
+}
+
+.clear {
+  clear: both;
+}
+
+@media (min-width: 576px) {
+  .columnLeft {
+    max-width: 400px;
+  }
+}
+
