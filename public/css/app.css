@@ -184,7 +184,7 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  margin: 0 10px 10px 10px;
+  margin: 0 10px 20px 10px;
   padding: 15px;
   background-color: #EBE8EA;
   -webkit-box-shadow: 2px 2px 5px #BAB8BA;
@@ -192,7 +192,7 @@ a {
 }
 
 .boardTuits__item {
-  color: #0A78C2;
+  color: grey;
   padding-right: 5px;
 }
 
@@ -205,6 +205,7 @@ a {
 @media (min-width: 576px) {
   .columnLeft {
     position: fixed;
+    top: 95px;
     width: 30%;
   }
 
