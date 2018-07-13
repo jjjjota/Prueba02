@@ -15,8 +15,12 @@ a {
   color: inherit;
 }
 
+.clear {
+  clear: both;
+}
+
 .columnLeft {
-  margin: 50px 15px;
+  margin: 20px 15px;
 }
 
 .columnLeft .navbar {
@@ -38,7 +42,7 @@ a {
 }
 
 .columnLeft .navbar__item {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #EBE8EA;
   padding: 0 10px;
 }
@@ -46,7 +50,7 @@ a {
 .columnLeft .search__box {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #0A78C2;
   width: 100%;
   margin-bottom: 15px;
@@ -57,25 +61,25 @@ a {
 }
 
 .columnLeft .search__box::-webkit-input-placeholder {
-  color: #EBE8EA;
+  color: #BAB8BA;
 }
 
 .columnLeft .search__box:-ms-input-placeholder {
-  color: #EBE8EA;
+  color: #BAB8BA;
 }
 
 .columnLeft .search__box::-ms-input-placeholder {
-  color: #EBE8EA;
+  color: #BAB8BA;
 }
 
 .columnLeft .search__box::placeholder {
-  color: #EBE8EA;
+  color: #BAB8BA;
 }
 
 .columnLeft .createTuit {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: inherit;
+  width: 100%;
   border-radius: 8px;
   background-color: #0D9EFF;
   text-align: center;
@@ -109,23 +113,23 @@ a {
   border-left: 1px solid #0D9EFF;
   border-right: 1px solid #0D9EFF;
   font-size: 1rem;
-  color: #0A78C2;
+  color: grey;
 }
 
 .columnLeft .createTuit__textarea::-webkit-input-placeholder {
-  color: #EBE8EA;
+  color: #BAB8BA;
 }
 
 .columnLeft .createTuit__textarea:-ms-input-placeholder {
-  color: #EBE8EA;
+  color: #BAB8BA;
 }
 
 .columnLeft .createTuit__textarea::-ms-input-placeholder {
-  color: #EBE8EA;
+  color: #BAB8BA;
 }
 
 .columnLeft .createTuit__textarea::placeholder {
-  color: #EBE8EA;
+  color: #BAB8BA;
 }
 
 .columnLeft .createTuit__button {
@@ -145,13 +149,82 @@ a {
   color: #EBE8EA;
 }
 
-.clear {
-  clear: both;
+.boardTuits {
+  margin: 15px;
+}
+
+.boardTuits__tuitImage {
+  position: relative;
+  top: 50px;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #0D9EFF;
+  border-radius: 50%;
+}
+
+.boardTuits__tuitBorder {
+  padding-top: 70px;
+  border: 1px solid #0D9EFF;
+}
+
+.boardTuits__tuitQuote {
+  margin: 0 10px;
+  border-bottom: 1px solid grey;
+  padding: 15px;
+  background-color: #EBE8EA;
+  -webkit-box-shadow: 2px 2px 5px #BAB8BA;
+          box-shadow: 2px 2px 5px #BAB8BA;
+}
+
+.boardTuits__tuitFeatures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin: 0 10px 10px 10px;
+  padding: 15px;
+  background-color: #EBE8EA;
+  -webkit-box-shadow: 2px 2px 5px #BAB8BA;
+          box-shadow: 2px 2px 5px #BAB8BA;
+}
+
+.boardTuits__item {
+  color: #0A78C2;
+  padding-right: 5px;
+}
+
+.boardTuits__item--trash {
+  margin-left: auto;
+  margin-right: 10px;
+  color: #BAB8BA;
 }
 
 @media (min-width: 576px) {
   .columnLeft {
-    max-width: 400px;
+    position: fixed;
+    width: 30%;
+  }
+
+  .boardTuits {
+    margin-left: 35%;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .columnLeft {
+    position: fixed;
+    max-width: 350px;
+    margin-left: 30px;
+  }
+
+  .boardTuits {
+    max-width: 650px;
+    margin-left: 450px;
+    margin-right: 50px;
   }
 }
 
