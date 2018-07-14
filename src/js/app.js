@@ -7,9 +7,20 @@ $(function() {
   $(".boardTuits__tuit").on('click', '.boardTuits__heart', function(event) {
     event.preventDefault();
 
-    $(this).toggleClass('boardTuits__heart--liked');
+    var counter = $(this).next(),
+        newCounter;
 
-    // suamr/restar contador
+    if (!$(this).hasClass('boardTuits__heart--liked')) {
+      newCounter = parseInt(counter.text()) + 1;
+
+      $(this).addClass('boardTuits__heart--liked');
+    } else {
+      newCounter = parseInt(counter.text()) - 1;
+
+      $(this).removeClass('boardTuits__heart--liked');
+    }
+
+    counter.text(newCounter);
   });
 
   // 03: Eliminar el div .boardTuits__tuit al hacer click sobre .boardTuits__trash
