@@ -36,17 +36,15 @@ a {
   margin: 20px 15px;
 
   .navbar {
+    display: flex;
+    justify-content: space-evenly;
     box-sizing: border-box;
 
     margin-bottom: 15px;
     border-radius: 8px;
-    padding: 5px 40px;
-    background-color: $light-blue;
+    padding: 8px 40px;
 
-    &__container {
-      display: flex;
-      justify-content: space-evenly;
-    }
+    background-color: $light-blue;
 
     &__item {
       font-size: 1.3rem;
@@ -77,35 +75,38 @@ a {
     width: 100%;
 
     border-radius: 8px;
+    padding: 15px 0;
 
     background-color: $light-blue;
     text-align: center;
 
-    &__imageContainer {
-      text-align: center;
-    }
-
     &__image {
-      width: 120px;
-      height: 120px;
+      object-fit: cover;
+      width: 150px;
+      height: 150px;
 
-      margin-top: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       border-radius: 3px;
     }
 
-    &__imageSelect {
-      max-width: 160px;
+    &__file {
+      display: block;
+      width: 100%;
 
-      margin-bottom: 10px;
-      border: 1px solid $white;
-      border-radius: 3px;
+      border: none;
+      padding: 3px 15px;
 
-      background-color: $white;
-      font-size: 0.8rem;
+      background-color: $blue;
+      color: $dark-white;
+      cursor: pointer;
+
+      option {
+        background-color: #fff;
+        color: $blue;
+      }
     }
 
-    &__textarea {
+    &__quote {
       resize: vertical;
       width: 100%;
 
@@ -125,7 +126,6 @@ a {
       width: 150px;
 
       margin-top: 10px;
-      margin-bottom: 20px;
       border: 3px solid  $white;
       border-radius: 51px;
       padding: 10px 0;
@@ -136,7 +136,6 @@ a {
       &:hover {
         border-color: $blue;
         background-color: $blue;
-        color: $white;
       }
     }
   }
@@ -158,7 +157,7 @@ a {
   }
 
   &__tuitBorder {
-    padding-top: 70px;
+    padding-top: 60px;
     border: 1px solid $light-blue;
   }
 
@@ -173,7 +172,6 @@ a {
 
   &__tuitFeatures {
     display: flex;
-    align-items: end;
     margin: 0 10px 20px 10px;
     padding: 15px;
 
@@ -184,7 +182,6 @@ a {
   &__item {
     color: grey;
     padding-right: 5px;
-
   }
 
   &__trash {
@@ -207,7 +204,6 @@ a {
 }
 
 // BREAKPOINTS
-
 @media (min-width: 576px) {
   .columnLeft {
     position: fixed;

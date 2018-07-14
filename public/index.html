@@ -28,12 +28,10 @@
 
     <!-- Barra de navegación mini ------------------------------------------------------------------->
     <nav class="navbar">
-      <ul class="navbar__container">
-        <li class="navbar__item"><a href="#"><i class="fas fa-bars"></i></a></li>
-        <li class="navbar__item"><a href="#"><i class="fas fa-home"></i></a></li>
-        <li class="navbar__item"><a href="#"><i class="fas fa-cog"></i></a></li>
-        <li class="navbar__item"><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
-      </ul>
+        <div class="navbar__item"><a href="#"><i class="fas fa-bars"></i></a></div>
+        <div class="navbar__item"><a href="#"><i class="fas fa-home"></i></a></div>
+        <div class="navbar__item"><a href="#"><i class="fas fa-cog"></i></a></div>
+        <div class="navbar__item"><a href="#"><i class="fas fa-sign-out-alt"></i></a></div>
     </nav>
 
     <!-- Caja de búsqueda ---------------------------------------------------------------------------->
@@ -42,34 +40,30 @@
     </form>
 
     <!-- Crear tuit --------------------------------------------------------------------------------->
-    <form class="createTuit">
+    <form class="createTuit" action="index.html" method="post">
+      <!-- Imagen del perfil -->
+      <img class="createTuit__image" src="../src/images/uk.png" alt="profile"/>
 
-      <!-- Imagen de perfil -->
-      <div class="createTuit__selectImage">
-
-        <div class="createTuit__imageContainer">
-          <img class="createTuit__image" src="../src/images/fl.jpg" alt="profile"/>
-        </div>
-
-        <!-- Seleccionar imagen de perfil -->
-        <!-- <input type="file" name="imageSelect" value=""/> -->
-        <select class="createTuit__imageSelected" name="image" id="image">
-          <option value="uk.png">Seleccionar imagen</option>
-          <option value="she.jpg">Margot Robbie</option>
-          <option value="he.jpg">Ryan Reynolds</option>
-          <option value="mr.jpg">Barack Obama</option>
-          <option value="fl.jpg">Florcita Motuda</option>
-        </select>
-      </div>
+      <!-- Seleccionar imagen de perfil -->
+      <select class="createTuit__file" name="file" id="file">
+        <option value="uk.png">Elige una imagen...</option>
+        <option value="01.jpg">imagen 01</option>
+        <option value="02.jpg">imagen 02</option>
+        <option value="03.jpg">imagen 03</option>
+        <option value="04.jpg">imagen 04</option>
+        <option value="05.jpg">imagen 05</option>
+        <option value="06.jpg">imagen 06</option>
+        <option value="07.jpg">imagen 07</option>
+        <option value="08.jpg">imagen 08</option>
+        <option value="09.jpg">imagen 09</option>
+        <option value="10.jpg">imagen 10</option>
+      </select>
 
       <!-- Texto del tuit -->
-      <div class="clear">
-        <textarea id="textarea" class="createTuit__textarea" name="tuitText" form="createTuit" rows="6" placeholder=" ¿Qué tienes en mente?" required></textarea>
-      </div>
+      <textarea class="createTuit__quote" name="tuitQuote" rows="6" placeholder="¿Qué tienes en mente?" required></textarea>
 
       <!-- Botón de enviar -->
-      <input class="createTuit__button" type="submit" name="submit" value="TWITTEAR">
-
+      <input class="createTuit__button" type="submit" name="submit" value="TWITTEAR"/>
     </form>
 
   </aside>
