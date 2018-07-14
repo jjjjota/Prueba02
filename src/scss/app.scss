@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran');
 
 // COLORS
-$light-blue: #0D9EFF;
+$light-blue: #1DA1F2;
 $blue: #0A78C2;
 $white: #EBE8EA;
 $dark-white: #BAB8BA;
@@ -152,8 +152,8 @@ a {
     width: 100px;
     height: 100px;
 
-    border: 1px solid $light-blue;
     border-radius: 50%;
+    object-fit: cover;
   }
 
   &__tuitBorder {
@@ -209,11 +209,12 @@ a {
     position: fixed;
     top: 95px;
     width: 30%;
+    margin-left: 5%;
   }
 
   .boardTuits {
-    margin-left: 35%;
-    margin-right: 50px;
+    margin-left: 40%;
+    margin-right: 5%;
   }
 }
 
@@ -223,16 +224,14 @@ a {
 
 @media (min-width: 1200px) {
   .columnLeft {
-    position: fixed;
     max-width: 350px;
 
-    margin-left: 30px;
+    margin-left: 100px;
   }
 
   .boardTuits {
     max-width: 650px;
 
-    margin-left: 450px;
-    margin-right: 50px;
+    margin-left: 500px;
   }
 }

@@ -35,7 +35,7 @@ a {
   margin-bottom: 15px;
   border-radius: 8px;
   padding: 8px 40px;
-  background-color: #0D9EFF;
+  background-color: #1DA1F2;
 }
 
 .columnLeft .navbar__item {
@@ -54,7 +54,7 @@ a {
   border: none;
   border-radius: 8px;
   padding: 5px 15px;
-  border: 1px solid #0D9EFF;
+  border: 1px solid #1DA1F2;
 }
 
 .columnLeft .search__box::-webkit-input-placeholder {
@@ -79,7 +79,7 @@ a {
   width: 100%;
   border-radius: 8px;
   padding: 15px 0;
-  background-color: #0D9EFF;
+  background-color: #1DA1F2;
   text-align: center;
 }
 
@@ -111,8 +111,8 @@ a {
   resize: vertical;
   width: 100%;
   border: none;
-  border-left: 1px solid #0D9EFF;
-  border-right: 1px solid #0D9EFF;
+  border-left: 1px solid #1DA1F2;
+  border-right: 1px solid #1DA1F2;
   font-size: 1rem;
   color: grey;
 }
@@ -139,7 +139,7 @@ a {
   border: 3px solid #EBE8EA;
   border-radius: 51px;
   padding: 10px 0;
-  background-color: #0D9EFF;
+  background-color: #1DA1F2;
   color: #EBE8EA;
 }
 
@@ -158,13 +158,14 @@ a {
   left: 30px;
   width: 100px;
   height: 100px;
-  border: 1px solid #0D9EFF;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .boardTuits__tuitBorder {
   padding-top: 60px;
-  border: 1px solid #0D9EFF;
+  border: 1px solid #1DA1F2;
 }
 
 .boardTuits__tuitQuote {
@@ -211,25 +212,24 @@ a {
     position: fixed;
     top: 95px;
     width: 30%;
+    margin-left: 5%;
   }
 
   .boardTuits {
-    margin-left: 35%;
-    margin-right: 50px;
+    margin-left: 40%;
+    margin-right: 5%;
   }
 }
 
 @media (min-width: 1200px) {
   .columnLeft {
-    position: fixed;
     max-width: 350px;
-    margin-left: 30px;
+    margin-left: 100px;
   }
 
   .boardTuits {
     max-width: 650px;
-    margin-left: 450px;
-    margin-right: 50px;
+    margin-left: 500px;
   }
 }
 
