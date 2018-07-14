@@ -46,20 +46,20 @@
 
       <!-- Imagen de perfil -->
       <div class="createTuit__selectImage">
+
         <div class="createTuit__imageContainer">
           <img class="createTuit__image" src="../src/images/fl.jpg" alt="profile"/>
         </div>
 
         <!-- Seleccionar imagen de perfil -->
-        <label for="image">
-          <select class="createTuit__imageSelect" name="select" id="image">
-            <option value="uk.png">Seleccionar imagen</option>
-            <option value="she.jpg">Margot Robbie</option>
-            <option value="he.jpg">Ryan Reynolds</option>
-            <option value="mr.jpg">Barack Obama</option>
-            <option value="fl.jpg">Florcita Motuda</option>
-          </select>
-        </label>
+        <!-- <input type="file" name="imageSelect" value=""/> -->
+        <select class="createTuit__imageSelected" name="image" id="image">
+          <option value="uk.png">Seleccionar imagen</option>
+          <option value="she.jpg">Margot Robbie</option>
+          <option value="he.jpg">Ryan Reynolds</option>
+          <option value="mr.jpg">Barack Obama</option>
+          <option value="fl.jpg">Florcita Motuda</option>
+        </select>
       </div>
 
       <!-- Texto del tuit -->
@@ -86,9 +86,9 @@
         </div>
 
         <div class="boardTuits__tuitFeatures">
-          <div class="boardTuits__item"><a href='#'><i class="fas fa-heart"></i></a></div>
+          <div class="boardTuits__item boardTuits__heart"><a href='#'><i class="fas fa-heart"></i></a></div>
           <div class="boardTuits__item">45.000</div>
-          <div class="boardTuits__item boardTuits__item--trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>
+          <div class="boardTuits__item boardTuits__trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>
         </div>
 
       </div>
@@ -103,26 +103,9 @@
         </div>
 
         <div class="boardTuits__tuitFeatures">
-          <div class="boardTuits__item"><a href='#'><i class="fas fa-heart"></i></a></div>
+          <div class="boardTuits__item boardTuits__heart"><a href='#'><i class="fas fa-heart"></i></a></div>
           <div class="boardTuits__item">45.000</div>
-          <div class="boardTuits__item boardTuits__item--trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>
-        </div>
-
-      </div>
-    </article>
-
-    <article class="boardTuits__tuit">
-      <img class="boardTuits__tuitImage" src="../src/images/fl.jpg" alt="author" />
-
-      <div class="boardTuits__tuitBorder">
-        <div class="boardTuits__tuitQuote">
-          Hello world, this is a default tuit!
-        </div>
-
-        <div class="boardTuits__tuitFeatures">
-          <div class="boardTuits__item"><a href='#'><i class="fas fa-heart"></i></a></div>
-          <div class="boardTuits__item">45.000</div>
-          <div class="boardTuits__item boardTuits__item--trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>
+          <div class="boardTuits__item boardTuits__trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>
         </div>
 
       </div>
