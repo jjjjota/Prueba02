@@ -8,10 +8,10 @@ $(function() {
   });
 
   // 02: Añadir/eliminar la clase .boardTuits__heart--liked al hacer click sobre .boardTuits__heart
-  $(".boardTuits").on('click', '.boardTuits__heart', function(event) {
+  $(".boardTuits").on('click', '.tuit__heart', function(event) {
     event.preventDefault();  // prevenir evento
 
-    $(this).addClass('boardTuits__heart--liked');
+    $(this).addClass('tuit__heart--liked');
 
     var counter = $(this).next(),  // obtengo el elemento con el número de likes
         newCounter = parseInt(counter.text()) + 1;  // obtengo el string, se convierte a number y se suma 1
@@ -32,10 +32,10 @@ $(function() {
   });
 
   // 03: Eliminar el div .boardTuits__tuit al hacer click sobre .boardTuits__trash
-  $(".boardTuits").on('click', '.boardTuits__trash', function(event) {
+  $(".boardTuits").on('click', '.tuit__trash', function(event) {
     event.preventDefault();
 
-    var tuit = $(this).parents('.boardTuits__tuit');
+    var tuit = $(this).parents('.tuit');
 
     tuit.fadeOut(500);  // linda desaparición
     setTimeout(function() {
