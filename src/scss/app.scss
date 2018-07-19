@@ -115,6 +115,7 @@ a {
       resize: vertical;
       width: 100%;
 
+      box-sizing: border-box;
       border: none;
       border-left: 1px solid $light-blue;
       border-right: 1px solid $light-blue;
