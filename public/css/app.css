@@ -1,10 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Catamaran);html {
+@import url(https://fonts.googleapis.com/css?family=Catamaran);:root {
   font: 16px /1.5 'Catamaran', 'sans-serif';
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 100%;
+  margin: 20px 15px;
 }
 
 ul {
@@ -17,10 +24,6 @@ a {
 
 .clear {
   clear: both;
-}
-
-.columnLeft {
-  margin: 20px 15px;
 }
 
 .columnLeft .navbar {
@@ -148,11 +151,11 @@ a {
   background-color: #0A78C2;
 }
 
-.boardTuits {
-  margin: 15px;
+.tuit {
+  height: 270px;
 }
 
-.boardTuits__tuitImage {
+.tuit__image {
   position: relative;
   top: 50px;
   left: 30px;
@@ -163,12 +166,12 @@ a {
      object-fit: cover;
 }
 
-.boardTuits__tuitBorder {
+.tuit__border {
   padding-top: 60px;
   border: 1px solid #1DA1F2;
 }
 
-.boardTuits__tuitQuote {
+.tuit__quote {
   margin: 0 10px;
   border-bottom: 1px solid grey;
   padding: 15px;
@@ -177,7 +180,7 @@ a {
           box-shadow: 2px 2px 5px #BAB8BA;
 }
 
-.boardTuits__tuitFeatures {
+.tuit__features {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,48 +191,56 @@ a {
           box-shadow: 2px 2px 5px #BAB8BA;
 }
 
-.boardTuits__item {
+.tuit__item {
   color: grey;
   padding-right: 5px;
 }
 
-.boardTuits__trash {
+.tuit__trash {
   margin-left: auto;
   margin-right: 10px;
   color: #BAB8BA;
 }
 
-.boardTuits__heart:hover {
+.tuit__heart:hover {
   text-shadow: 0 0 5px #AD0600;
 }
 
-.boardTuits__heart--liked {
+.tuit__heart--liked {
   color: #AD0600;
 }
 
 @media (min-width: 576px) {
+  .grid {
+    grid-template-columns: 35vw auto;
+    grid-template-rows: 100%;
+    margin: 0 5vw;
+  }
+
   .columnLeft {
     position: fixed;
-    top: 95px;
-    width: 30%;
-    margin-left: 5%;
+    top: 90px;
+    width: 35vw;
   }
 
   .boardTuits {
-    margin-left: 40%;
-    margin-right: 5%;
+    grid-column-start: 2;
+    margin-left: 30px;
   }
 }
 
 @media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: 350px auto;
+    margin: 0 10vw;
+  }
+
   .columnLeft {
     max-width: 350px;
-    margin-left: 100px;
   }
 
   .boardTuits {
     max-width: 650px;
-    margin-left: 500px;
   }
 }
 

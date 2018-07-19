@@ -9,14 +9,20 @@ $dark-white: #BAB8BA;
 $red: #AD0600;
 
 // GENERAL
-
-html {
+:root {
   font: 16px /1.5 'Catamaran', 'sans-serif';
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 100%;
+  margin: 20px 15px;
 }
 
 ul {
@@ -33,7 +39,6 @@ a {
 
 // LEFT COLUMN
 .columnLeft {
-  margin: 20px 15px;
 
   .navbar {
     display: flex;
@@ -142,10 +147,10 @@ a {
 }
 
 // BOARDTUITS
-.boardTuits {
-  margin: 15px;
+.tuit {
+  height: 270px;
 
-  &__tuitImage {
+  &__image {
     position: relative;
     top: 50px;
     left: 30px;
@@ -156,12 +161,12 @@ a {
     object-fit: cover;
   }
 
-  &__tuitBorder {
+  &__border {
     padding-top: 60px;
     border: 1px solid $light-blue;
   }
 
-  &__tuitQuote {
+  &__quote {
     margin: 0 10px;
     border-bottom: 1px solid grey;
     padding: 15px;
@@ -170,7 +175,7 @@ a {
     box-shadow: 2px 2px 5px $dark-white;
   }
 
-  &__tuitFeatures {
+  &__features {
     display: flex;
     margin: 0 10px 20px 10px;
     padding: 15px;
@@ -199,22 +204,25 @@ a {
       color: $red;
     }
   }
-
-
 }
 
 // BREAKPOINTS
 @media (min-width: 576px) {
+  .grid {
+    grid-template-columns: 35vw auto;
+    grid-template-rows: 100%;
+    margin: 0 5vw;
+  }
+
   .columnLeft {
     position: fixed;
-    top: 95px;
-    width: 30%;
-    margin-left: 5%;
+    top: 90px;
+    width: 35vw;
   }
 
   .boardTuits {
-    margin-left: 40%;
-    margin-right: 5%;
+    grid-column-start: 2;
+    margin-left: 30px;
   }
 }
 
@@ -223,15 +231,16 @@ a {
 @media (min-width: 992px) { }
 
 @media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: 350px auto;
+    margin: 0 10vw;
+  }
+
   .columnLeft {
     max-width: 350px;
-
-    margin-left: 100px;
   }
 
   .boardTuits {
     max-width: 650px;
-
-    margin-left: 500px;
   }
 }

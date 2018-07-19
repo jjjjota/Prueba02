@@ -46,7 +46,7 @@ $(function() {
   // 04: Obtener imagen del input y cambiarla en img
   $("[name='file']").change(function(event) {
     var value = $(event.target).val(),  // obtener valor
-        source = `../src/images/${value}`;
+        source = `images/${value}`;
 
     $(this).siblings('img').attr('src', source);  // reemplazarlo en la ruta de la imagen
   });
@@ -63,27 +63,27 @@ $(function() {
       return;
     }
 
-    var tuit = `<article class="boardTuits__tuit">\
-        <img class="boardTuits__tuitImage" src="../src/images/${image}" alt="author" />\
+    var tuit = `<article class="tuit">\
+        <img class="tuit__image" src="images/${image}" alt="author" />\
 
-        <div class="boardTuits__tuitBorder">\
-          <div class="boardTuits__tuitQuote">\
+        <div class="tuit__border">\
+          <div class="tuit__quote">\
             ${quote}\
           </div>\
 
-          <div class="boardTuits__tuitFeatures">\
-            <div class="boardTuits__item boardTuits__heart"><a href='#'><i class="fas fa-heart"></i></a></div>\
-            <div class="boardTuits__item">0</div>\
-            <div class="boardTuits__item boardTuits__trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>\
+          <div class="tuit__features">\
+            <div class="tuit__item tuit__heart"><a href='#'><i class="fas fa-heart"></i></a></div>\
+            <div class="tuit__item">0</div>\
+            <div class="tuit__item tuit__trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>\
           </div>\
 
         </div>\
       </article>`
 
-    $(tuit).appendTo('.boardTuits').hide().fadeIn(500); // agregar tuit
+    $(tuit).prependTo('.boardTuits').hide().fadeIn(500); // agregar tuit
 
     $(this)[0].reset();  // limpiar form
 
-    $(this).children(":first-child").attr('src', '../src/images/uk.png');
+    $(this).children(":first-child").attr('src', 'images/uk.png');
   });
 });

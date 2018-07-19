@@ -22,90 +22,95 @@
 
 
 <body>
+  <div class="grid">
 
-  <!-- COLUMN LEFT -------------------------------------------------------------------------------->
-  <aside class="columnLeft">
+    <!-- COLUMN LEFT -------------------------------------------------------------------------------->
+    <aside class="columnLeft">
 
-    <!-- Barra de navegación mini ------------------------------------------------------------------->
-    <nav class="navbar">
+      <!-- Barra de navegación mini ------------------------------------------------------------------->
+      <nav class="navbar">
         <div class="navbar__item"><a href="#"><i class="fas fa-bars"></i></a></div>
         <div class="navbar__item"><a href="#"><i class="fas fa-home"></i></a></div>
         <div class="navbar__item"><a href="#"><i class="fas fa-cog"></i></a></div>
         <div class="navbar__item"><a href="#"><i class="fas fa-sign-out-alt"></i></a></div>
-    </nav>
+      </nav>
 
-    <!-- Caja de búsqueda ---------------------------------------------------------------------------->
-    <form>
-      <input class="search__box" type="search" name="search" value="" placeholder="Buscar"/>
-    </form>
+      <!-- Caja de búsqueda ---------------------------------------------------------------------------->
+      <form>
+        <input class="search__box" type="search" name="search" value="" placeholder="Buscar"/>
+      </form>
 
-    <!-- Crear tuit --------------------------------------------------------------------------------->
-    <form class="createTuit" action="index.html" method="post">
-      <!-- Imagen del perfil -->
-      <img class="createTuit__image" src="../src/images/uk.png" alt="profile"/>
+      <!-- Crear tuit --------------------------------------------------------------------------------->
+      <form class="createTuit" action="index.html" method="post">
+        <!-- Imagen del perfil -->
+        <img class="createTuit__image" src="images/uk.png" alt="profile"/>
 
-      <!-- Seleccionar imagen de perfil -->
-      <select class="createTuit__file" name="file" id="file">
-        <option value="uk.png">Elige una imagen...</option>
-        <option value="01.jpg">imagen 01</option>
-        <option value="02.jpg">imagen 02</option>
-        <option value="03.jpg">imagen 03</option>
-        <option value="04.jpg">imagen 04</option>
-        <option value="05.jpg">imagen 05</option>
-        <option value="06.jpg">imagen 06</option>
-        <option value="07.jpg">imagen 07</option>
-        <option value="08.jpg">imagen 08</option>
-        <option value="09.jpg">imagen 09</option>
-        <option value="10.jpg">imagen 10</option>
-      </select>
+        <!-- Seleccionar imagen de perfil -->
+        <select class="createTuit__file" name="file" id="file">
+          <option value="uk.png">Elige una imagen...</option>
+          <option value="01.jpg">imagen 01</option>
+          <option value="02.jpg">imagen 02</option>
+          <option value="03.jpg">imagen 03</option>
+          <option value="04.jpg">imagen 04</option>
+          <option value="05.jpg">imagen 05</option>
+          <option value="06.jpg">imagen 06</option>
+          <option value="07.jpg">imagen 07</option>
+          <option value="08.jpg">imagen 08</option>
+          <option value="09.jpg">imagen 09</option>
+          <option value="10.jpg">imagen 10</option>
+        </select>
 
-      <!-- Texto del tuit -->
-      <textarea class="createTuit__quote" name="tuitQuote" rows="6" placeholder="¿Qué tienes en mente?" required></textarea>
+        <!-- Texto del tuit -->
+        <textarea class="createTuit__quote" name="tuitQuote" rows="6" placeholder="¿Qué tienes en mente?" required></textarea>
 
-      <!-- Botón de enviar -->
-      <input class="createTuit__button" type="submit" name="submit" value="TWITTEAR"/>
-    </form>
+        <!-- Botón de enviar -->
+        <input class="createTuit__button" type="submit" name="submit" value="TWITTEAR"/>
+      </form>
 
-  </aside>
+    </aside>
 
-  <!-- BOARDTUITS --------------------------------------------------------------------------------->
-  <section class="boardTuits" id="boardTuits">
+    <!-- BOARDTUITS --------------------------------------------------------------------------------->
+    <section class="boardTuits" id="boardTuits">
 
-    <article class="boardTuits__tuit">
-      <img class="boardTuits__tuitImage" src="../src/images/fl.jpg" alt="author" />
+      <article class="tuit">
 
-      <div class="boardTuits__tuitBorder">
-        <div class="boardTuits__tuitQuote">
-          Hello world, this is a default tuit!
+        <img class="tuit__image" src="images/fl.jpg" alt="author" />
+
+        <div class="tuit__border">
+          <div class="tuit__quote">
+            Hello world, this is a default tuit!
+          </div>
+
+          <div class="tuit__features">
+            <div class="tuit__item tuit__heart"><a href='#'><i class="fas fa-heart"></i></a></div>
+            <div class="tuit__item">45000</div>
+            <div class="tuit__item tuit__trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>
+          </div>
         </div>
 
-        <div class="boardTuits__tuitFeatures">
-          <div class="boardTuits__item boardTuits__heart"><a href='#'><i class="fas fa-heart"></i></a></div>
-          <div class="boardTuits__item">45000</div>
-          <div class="boardTuits__item boardTuits__trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>
+      </article>
+
+      <article class="tuit">
+
+        <img class="tuit__image" src="images/fl.jpg" alt="author" />
+
+        <div class="tuit__border">
+          <div class="tuit__quote">
+            Hello world, this is a default tuit!
+          </div>
+
+          <div class="tuit__features">
+            <div class="tuit__item tuit__heart"><a href='#'><i class="fas fa-heart"></i></a></div>
+            <div class="tuit__item">45000</div>
+            <div class="tuit__item tuit__trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>
+          </div>
         </div>
 
-      </div>
-    </article>
+      </article>
 
-    <article class="boardTuits__tuit">
-      <img class="boardTuits__tuitImage" src="../src/images/fl.jpg" alt="author" />
+    </section>
 
-      <div class="boardTuits__tuitBorder">
-        <div class="boardTuits__tuitQuote">
-          Hello world, this is a default tuit!
-        </div>
-
-        <div class="boardTuits__tuitFeatures">
-          <div class="boardTuits__item boardTuits__heart"><a href='#'><i class="fas fa-heart"></i></a></div>
-          <div class="boardTuits__item">45000</div>
-          <div class="boardTuits__item boardTuits__trash"><a href='#'><i class="far fa-trash-alt"></i></a></div>
-        </div>
-
-      </div>
-    </article>
-
-  </section>
+  </div>
 </body>
 
 
