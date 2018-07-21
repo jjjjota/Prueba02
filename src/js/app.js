@@ -62,8 +62,8 @@ $(function() {
         image = data[0].value,
         quote = data[1].value;
 
-    if (image == 'uk.png') {
-      return; // si no ha puesto foto, no agregar tuit
+    if (image == 'uk.png' || quote === '' ) {
+      return; // si no ha puesto foto ni escrito algo, no agregar tuit
     }
 
     var template = $('article#template').clone().removeAttr('id'); // clonar el template
