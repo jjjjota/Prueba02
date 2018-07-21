@@ -26,6 +26,10 @@ a {
   clear: both;
 }
 
+#template {
+  display: none;
+}
+
 .columnLeft .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
