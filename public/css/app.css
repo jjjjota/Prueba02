@@ -217,17 +217,30 @@ a {
   color: #AD0600;
 }
 
+@media (min-height: 500px) {
+  .columnLeft {
+    position: fixed;
+    top: 5px;
+    width: 30vw;
+    margin-top: 0;
+  }
+}
+
+@media (min-height: 600px) {
+  .columnLeft {
+    top: 90px;
+  }
+}
+
 @media (min-width: 576px) {
   .grid {
-    grid-template-columns: 35vw auto;
+    grid-template-columns: 30vw auto;
     grid-template-rows: 100%;
-    margin: 0 5vw;
+    margin: 20px 5vw;
   }
 
   .columnLeft {
-    position: fixed;
-    top: 90px;
-    width: 35vw;
+    margin-top: 30px;
   }
 
   .boardTuits {
@@ -242,12 +255,12 @@ a {
 
 @media (min-width: 1200px) {
   .grid {
-    grid-template-columns: 350px auto;
+    grid-template-columns: 300px auto;
     margin: 0 10vw;
   }
 
   .columnLeft {
-    max-width: 350px;
+    max-width: 300px;
   }
 
   .boardTuits .tuit {
