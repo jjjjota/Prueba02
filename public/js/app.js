@@ -118,10 +118,10 @@ $(function () {
 
         var tuit = $(this).parents('.tuit');
 
-        tuit.fadeOut(500); // linda desaparición
+        tuit.fadeOut(650); // linda desaparición
         setTimeout(function () {
             tuit.remove(); // remover el elemento del DOM luego de 0.5 seg
-        }, 600);
+        }, 2000);
     });
 
     // 04: Obtener imagen del select y cambiarla actualizar src de img
@@ -150,7 +150,7 @@ $(function () {
 
         template.children('.tuit__image').attr('src', 'images/' + image); // setear la imagen
         template.find('.tuit__quote').text('' + quote); // setear el texto
-        $(template).prependTo('.boardTuits').hide().fadeIn(1000); // agregar tuit
+        $(template).prependTo('.boardTuits').hide().fadeIn(1350); // agregar tuit
 
         $(this).children('textarea').val(''); // limpiar sólo textarea del form
 
