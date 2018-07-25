@@ -9,9 +9,9 @@
 
 .grid {
   display: grid;
-  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 100%;
-  margin: 20px 15px;
+  margin: 20px 5vw;
 }
 
 ul {
@@ -157,11 +157,11 @@ a {
   background-color: #0A78C2;
 }
 
-.tuit {
-  height: 270px;
+.boardTuits {
+  max-width: 85vw;
 }
 
-.tuit__image {
+.boardTuits .tuit__image {
   position: relative;
   top: 50px;
   left: 30px;
@@ -172,21 +172,22 @@ a {
      object-fit: cover;
 }
 
-.tuit__border {
+.boardTuits .tuit__border {
   padding-top: 60px;
   border: 1px solid #1DA1F2;
 }
 
-.tuit__quote {
+.boardTuits .tuit__quote {
   margin: 0 10px;
   border-bottom: 1px solid grey;
   padding: 15px;
+  word-wrap: break-word;
   background-color: #EBE8EA;
   -webkit-box-shadow: 2px 2px 5px #BAB8BA;
           box-shadow: 2px 2px 5px #BAB8BA;
 }
 
-.tuit__features {
+.boardTuits .tuit__features {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,22 +198,22 @@ a {
           box-shadow: 2px 2px 5px #BAB8BA;
 }
 
-.tuit__item {
+.boardTuits .tuit__item {
   color: grey;
   padding-right: 5px;
 }
 
-.tuit__trash {
+.boardTuits .tuit__trash {
   margin-left: auto;
   margin-right: 10px;
   color: #BAB8BA;
 }
 
-.tuit__heart:hover {
+.boardTuits .tuit__heart:hover {
   text-shadow: 0 0 5px #AD0600;
 }
 
-.tuit__heart--liked {
+.boardTuits .tuit__heart--liked {
   color: #AD0600;
 }
 
@@ -233,6 +234,10 @@ a {
     grid-column-start: 2;
     margin-left: 30px;
   }
+
+  .boardTuits .tuit {
+    max-width: 54vw;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -245,7 +250,7 @@ a {
     max-width: 350px;
   }
 
-  .boardTuits {
+  .boardTuits .tuit {
     max-width: 650px;
   }
 }

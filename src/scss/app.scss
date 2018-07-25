@@ -20,9 +20,9 @@ $red: #AD0600;
 
 .grid {
   display: grid;
-  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 100%;
-  margin: 20px 15px;
+  margin: 20px 5vw;
 }
 
 ul {
@@ -152,61 +152,65 @@ a {
 }
 
 // BOARDTUITS
-.tuit {
-  height: 270px;
+.boardTuits{
+  max-width: 85vw;
 
-  &__image {
-    position: relative;
-    top: 50px;
-    left: 30px;
-    width: 100px;
-    height: 100px;
+  .tuit {
 
-    border-radius: 50%;
-    object-fit: cover;
-  }
+    &__image {
+      position: relative;
+      top: 50px;
+      left: 30px;
+      width: 100px;
+      height: 100px;
 
-  &__border {
-    padding-top: 60px;
-    border: 1px solid $light-blue;
-  }
-
-  &__quote {
-    margin: 0 10px;
-    border-bottom: 1px solid grey;
-    padding: 15px;
-
-    background-color: $white;
-    box-shadow: 2px 2px 5px $dark-white;
-  }
-
-  &__features {
-    display: flex;
-    margin: 0 10px 20px 10px;
-    padding: 15px;
-
-    background-color: $white;
-    box-shadow: 2px 2px 5px $dark-white;
-  }
-
-  &__item {
-    color: grey;
-    padding-right: 5px;
-  }
-
-  &__trash {
-    margin-left: auto;
-    margin-right: 10px;
-    color: $dark-white;
-  }
-
-  &__heart {
-    &:hover {
-      text-shadow: 0 0 5px $red;
+      border-radius: 50%;
+      object-fit: cover;
     }
 
-    &--liked {
-      color: $red;
+    &__border {
+      padding-top: 60px;
+      border: 1px solid $light-blue;
+    }
+
+    &__quote {
+      margin: 0 10px;
+      border-bottom: 1px solid grey;
+      padding: 15px;
+
+      word-wrap: break-word;
+      background-color: $white;
+      box-shadow: 2px 2px 5px $dark-white;
+    }
+
+    &__features {
+      display: flex;
+      margin: 0 10px 20px 10px;
+      padding: 15px;
+
+      background-color: $white;
+      box-shadow: 2px 2px 5px $dark-white;
+    }
+
+    &__item {
+      color: grey;
+      padding-right: 5px;
+    }
+
+    &__trash {
+      margin-left: auto;
+      margin-right: 10px;
+      color: $dark-white;
+    }
+
+    &__heart {
+      &:hover {
+        text-shadow: 0 0 5px $red;
+      }
+
+      &--liked {
+        color: $red;
+      }
     }
   }
 }
@@ -228,6 +232,10 @@ a {
   .boardTuits {
     grid-column-start: 2;
     margin-left: 30px;
+
+    .tuit {
+      max-width: 55vw;
+    }
   }
 }
 
@@ -246,6 +254,8 @@ a {
   }
 
   .boardTuits {
-    max-width: 650px;
+    .tuit {
+      max-width: 650px;
+    }
   }
 }
