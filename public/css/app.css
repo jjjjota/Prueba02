@@ -184,7 +184,12 @@ a {
 }
 
 .boardTuits {
-  max-width: 85vw;
+  max-width: 90vw;
+}
+
+.boardTuits .tuit {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .boardTuits .tuit__image {
@@ -270,7 +275,7 @@ a {
   }
 
   .columnLeft {
-    margin-top: 50px;
+    margin-top: 90px;
     width: 30vw;
   }
 

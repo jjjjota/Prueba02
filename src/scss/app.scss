@@ -177,9 +177,10 @@ a {
 
 // BOARDTUITS
 .boardTuits{
-  max-width: 85vw;
+  max-width: 90vw;
 
   .tuit {
+    box-sizing: border-box;
 
     &__image {
       position: relative;
@@ -262,7 +263,7 @@ a {
   }
 
   .columnLeft {
-    margin-top: 50px;
+    margin-top: 90px;
     width: 30vw;
   }
 
