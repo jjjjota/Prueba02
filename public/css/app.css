@@ -292,7 +292,7 @@ a {
 @media (min-width: 576px) and (min-height: 500px) {
   .columnLeft {
     position: fixed;
-    top: 7vh;
+    top: 5vh;
     margin-top: 0;
   }
 }
