@@ -289,10 +289,10 @@ a {
   }
 }
 
-@media (min-width: 576px) and (min-height: 480px) {
+@media (min-width: 576px) and (min-height: 500px) {
   .columnLeft {
     position: fixed;
-    top: 8vh;
+    top: 7vh;
     margin-top: 0;
   }
 }
