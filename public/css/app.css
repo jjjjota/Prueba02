@@ -217,21 +217,6 @@ a {
   color: #AD0600;
 }
 
-@media (min-height: 500px) {
-  .columnLeft {
-    position: fixed;
-    top: 5px;
-    width: 30vw;
-    margin-top: 0;
-  }
-}
-
-@media (min-height: 600px) {
-  .columnLeft {
-    top: 90px;
-  }
-}
-
 @media (min-width: 576px) {
   .grid {
     grid-template-columns: 30vw auto;
@@ -240,7 +225,8 @@ a {
   }
 
   .columnLeft {
-    margin-top: 30px;
+    margin-top: 50px;
+    width: 30vw;
   }
 
   .boardTuits {
@@ -250,6 +236,20 @@ a {
 
   .boardTuits .tuit {
     max-width: 50vw;
+  }
+}
+
+@media (min-width: 576px) and (min-height: 500px) {
+  .columnLeft {
+    position: fixed;
+    top: 8vh;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 576px) and (min-height: 600px) {
+  .columnLeft {
+    top: 90px;
   }
 }
 
