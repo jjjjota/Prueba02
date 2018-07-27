@@ -46,11 +46,9 @@ $(function() {
     }, 2000);
   });
 
-  // 04: Obtener imagen del select y cambiarla actualizar src de img
-  $("select#file").change(function() {
-    var value = $(this).val(),  // obtener valor
-        source = `images/${value}`;
-
+  // 04: Obtener imagen del input y actualizar src de img
+  $('.createTuit__file').change(function(e) {
+    var source = e.target.files[0].path;  // obtener ruta
     $(this).prev().attr('src', source);  // reemplazarlo en la ruta de la imagen
   });
 
@@ -58,17 +56,16 @@ $(function() {
   $('form').submit(function(event) {
     event.preventDefault();  // prevenir evento
 
-    var data = $(this).serializeArray(),  // obtener data
-        image = data[0].value,
-        quote = data[1].value;
+    var image = $(this).children('.createTuit__image').attr('src'),  // obtener source
+        quote = $(this).children('.createTuit__quote').val();
 
-    if (image == 'uk.png' || quote === '' ) {
+    if (image == 'images/uk.png' || quote === '' ) {
       return; // si no ha puesto foto ni escrito algo, no agregar tuit
     }
 
     var template = $('article#template').clone().removeAttr('id'); // clonar el template
 
-    template.children('.tuit__image').attr('src', `images/${image}`); // setear la imagen
+    template.children('.tuit__image').attr('src', `${image}`); // setear la imagen
     template.find('.tuit__quote').text(`${quote}`);  // setear el texto
     $(template).prependTo('.boardTuits').hide().fadeIn(1350); // agregar tuit
 
