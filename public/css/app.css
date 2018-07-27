@@ -86,6 +86,7 @@ a {
 }
 
 .columnLeft .createTuit {
+  overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -110,21 +111,8 @@ a {
   cursor: pointer;
   border: none;
   padding: 3px 15px;
-  background-color: #0A78C2;
-  color: #BAB8BA;
-}
-
-.columnLeft .createTuit__file option {
-  background-color: #fff;
-  color: #0A78C2;
-}
-
-.columnLeft .createTuit__file option:focus {
-  outline: none;
-}
-
-.columnLeft .createTuit__file:focus {
-  outline: none;
+  color: #EBE8EA;
+  word-wrap: break-word;
 }
 
 .columnLeft .createTuit__quote {

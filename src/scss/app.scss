@@ -84,6 +84,7 @@ a {
   }
 
   .createTuit {
+    overflow: hidden;
     box-sizing: border-box;
     width: 100%;
 
@@ -110,21 +111,8 @@ a {
       border: none;
       padding: 3px 15px;
 
-      background-color: $blue;
-      color: $dark-white;
-
-      option {
-        background-color: #fff;
-        color: $blue;
-
-        &:focus {
-          outline: none;
-        }
-      }
-
-      &:focus {
-        outline: none;
-      }
+      color: $white;
+      word-wrap: break-word;
     }
 
     &__quote {
