@@ -62,6 +62,11 @@ $(function() {
     var image = $(this).children('.createTuit__image').attr('src'),  // obtener source
         quote = $(this).children('.createTuit__quote').val();
 
+    if ( quote === '' ) {
+      alert( "Tu mensaje está vacío!" );
+      return
+    }
+
     var template = $('article#template').clone().removeAttr('id'); // clonar el template
 
     template.children('.tuit__image').attr('src', `${image}`); // setear la imagen
