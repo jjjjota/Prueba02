@@ -241,7 +241,6 @@ a {
 }
 
 .boardTuits .tuit__heart:hover {
-  color: #AD0600;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }

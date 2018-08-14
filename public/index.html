@@ -36,21 +36,16 @@
         <div class="navbar__item"><a href="#"><i class="fas fa-sign-out-alt"></i></a></div>
       </nav>
 
-      <!-- Caja de búsqueda ---------------------------------------------------------------------------->
-      <form>
-        <input class="search__box" type="search" name="search" value="" placeholder="Buscar"/>
-      </form>
-
       <!-- Crear tuit --------------------------------------------------------------------------------->
       <form class="createTuit" action="index.html" method="post">
         <!-- Imagen del perfil -->
-        <img class="createTuit__image" src="images/uk.png" alt="profile"/>
+        <img class="createTuit__image" src="images/uk.png" alt="profile" />
 
         <!-- Seleccionar imagen de perfil -->
-        <input class="createTuit__file" type="file" name="file-input" />
+        <input class="createTuit__file" type="file" name="file-input" accept="image/*" />
 
         <!-- Texto del tuit -->
-        <textarea class="createTuit__quote" name="tuitQuote" rows="4" placeholder="¿Qué tienes en mente?"></textarea>
+        <textarea class="createTuit__quote" name="tuitQuote" rows="4" placeholder="¿Qué tienes en mente?" required ></textarea>
 
         <!-- Botón de enviar -->
         <input class="createTuit__button" type="submit" name="submit" value="TWITTEAR"/>
